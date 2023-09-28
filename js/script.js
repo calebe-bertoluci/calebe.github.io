@@ -1,0 +1,1 @@
+$(document).off('.alert.data-api')

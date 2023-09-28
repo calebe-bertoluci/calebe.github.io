@@ -1,0 +1,83 @@
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+.img-banner {
+    min-height: 700px;
+    max-height: 700px;
+    object-fit: cover;
+}
+
+.topics {
+    background-color: #F9F9F9;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.img-topics {
+    width: 48px; /* Increase the width */
+    height: 48px; /* Increase the height */
+    cursor: pointer;
+}
+
+.owl-carousel {
+    cursor: pointer;
+}
+
+.can-u-see-me {
+
+}
+
+.can-u-see-me2 {
+
+}
+
+.faq {
+    background-color: #F9F9F9;
+}
+
+.bg-footer {
+    background-color: #709AB5;
+}
+
+a {
+    color: unset !important;
+    text-decoration: none !important;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.carousel-fade .carousel-inner .carousel-item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active.carousel-item-left, .carousel-fade .carousel-inner .active.carousel-item-right, .carousel-fade .carousel-inner .carousel-item {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active, .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left, .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.btn-secondary {
+    background-color: #709AB5 !important;
+}
+
+.footer {
+    background-color: #709AB5;
+}
+
+.list-group-item-info {
+    background-color: #709AB5 !important;
+}
+
+li {
+    list-style-type: none !important;
+}
