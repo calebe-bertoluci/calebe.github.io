@@ -36,9 +36,12 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<nav class="navbar navbar-expand-xl bg-body-tertiary sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">
+            <img src="imgs/logo.png" alt="Logo" width="43" height="43" class="d-inline-block align-text-center">
+            IBJM Livraria</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,84 +51,49 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Novidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Política da Igreja</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        Categorias
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Novidades</a></li>
+                        <li><a class="dropdown-item" href="#">Recomendaçao Pastoral</a></li>
+                        <li><a class="dropdown-item" href="#">Teologia</a></li>
+                        <li><a class="dropdown-item" href="#">Aconselhamento</a></li>
+                        <li><a class="dropdown-item" href="#">Infantil</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link disabled" aria-disabled="true">Administração</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fale Conosco</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Procurar Título..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
             </form>
         </div>
     </div>
 </nav>
 
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light pe-3 sticky-top bg-body-tertiary">-->
-<!--    <a class="navbar-brand" href="#"> </a>-->
-<!--    <img src="imgs/logo.png" width="45" height="45" class="d-inline-block me-auto" alt="">-->
-<!--    &lt;!&ndash;            COLOCAR LIVRARIA OU NOME DA IGREJA&ndash;&gt;-->
-<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"-->
-<!--            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--        <span class="navbar-toggler-icon"></span>-->
-<!--    </button>-->
-<!--    <div class="collapse navbar-collapse ps-3" id="navbarNavDropdown">-->
-<!--        <ul class="navbar-nav">-->
-<!--            <li class="nav-item active">-->
-<!--                <a class="nav-link" href="#">Home</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="#">Lançamentos</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="#">Política da Igreja</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item dropdown">-->
-<!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"-->
-<!--                   aria-haspopup="true" aria-expanded="false">-->
-<!--                    Categorias-->
-<!--                </a>-->
-<!--                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
-<!--                    <a class="dropdown-item" href="#">Novidades</a>-->
-<!--                    <a class="dropdown-item" href="#">Recomendação Pastoral</a>-->
-<!--                    <a class="dropdown-item" href="#">Teologia</a>-->
-<!--                    <a class="dropdown-item" href="#">Aconselhamento</a>-->
-<!--                    <a class="dropdown-item" href="#">Infantil</a>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--            <form class="form-inline my-lg-0 pb-2">-->
-<!--                <input class="form-control mr-sm-2" type="search" placeholder="Procurar Título..." aria-label="Search">-->
-<!--            </form>-->
-<!--            <li>-->
-<!--                <button class="btn btn-outline-success" type="submit">Pesquisar</button>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</nav>-->
-
 <!--BANNER PRINCIPAL-->
 <div id="carouselExampleControlsNoTouching" class="carousel carousel-fade" data-bs-touch="false">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="imgs/banner1.jpg" class="d-block w-100 img-banner" alt="imagem1">
+            <img src="imgs/banner1.jpg" class="img-fluid d-block w-100 img-banner" alt="imagem1">
         </div>
         <div class="carousel-item">
-            <img src="imgs/banner2.jpg" class="d-block w-100 img-banner" alt="imagem2">
+            <img src="imgs/banner2.jpg" class="img-fluid d-block w-100 img-banner" alt="imagem2">
         </div>
         <div class="carousel-item">
-            <img src="imgs/banner3.png" class="d-block w-100 img-banner" alt="imagem3">
+            <img src="imgs/banner3.png" class="img-fluid d-block w-100 img-banner" alt="imagem3">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
