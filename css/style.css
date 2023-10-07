@@ -17,6 +17,7 @@ html {
     min-height: 700px;
     max-height: 700px;
     object-fit: cover;
+    min-width: 100% !important;
 }
 
 .topics {
