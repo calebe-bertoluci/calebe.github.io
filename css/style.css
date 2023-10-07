@@ -32,19 +32,11 @@ html {
     cursor: pointer;
 }
 
-.can-u-see-me2 {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    border: none !important;
-}
-
-.btn-access-catalog {
-    margin-right: 20px !important;
-    padding-left: 20px !important;
-    border: none !important;
-}
+/*.btn-access-catalog {*/
+/*    margin-right: 20px !important;*/
+/*    padding-left: 10px !important;*/
+/*    border: none !important;*/
+/*}*/
 
 .owl-carousel {
     cursor: pointer;
