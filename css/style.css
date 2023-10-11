@@ -28,16 +28,10 @@ html {
 }
 
 .img-topics {
-    width: 48px; /* Increase the width */
-    height: 48px; /* Increase the height */
+    width: 48px;
+    height: 48px;
     cursor: pointer;
 }
-
-/*.btn-access-catalog {*/
-/*    margin-right: 20px !important;*/
-/*    padding-left: 10px !important;*/
-/*    border: none !important;*/
-/*}*/
 
 .owl-carousel {
     cursor: pointer;
@@ -63,16 +57,6 @@ a {
 
 footer a:hover {
     color: white;
-}
-
-.carousel-fade .carousel-inner .active.carousel-item-left, .carousel-fade .carousel-inner .active.carousel-item-right,
-.carousel-fade .carousel-inner .carousel-item .bg-footer .faq .row .cards-home {
-    opacity: 0;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    border: none !important;
 }
 
 .btn-secondary {
