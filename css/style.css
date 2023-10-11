@@ -5,6 +5,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 .row {
     padding-right: 0px !important;
     padding-left: 0px !important;
@@ -13,17 +14,10 @@ html {
     border: none !important;
 }
 
-.container-banner {
-    max-width: 500px;
-    object-fit: contain !important;
-}
-
-
 .img-banner {
-    width: 100%;
-    min-height: 500px;
-    max-height: 500px;
-    object-fit: cover !important;
+    min-height: 700px;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .topics {
@@ -56,20 +50,10 @@ html {
 
 .faq {
     background-color: #F9F9F9;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    border: none !important;
 }
 
 .bg-footer {
     background-color: #709AB5;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    border: none !important;
 }
 
 a {
@@ -81,24 +65,9 @@ footer a:hover {
     color: white;
 }
 
-.carousel-fade .carousel-inner .carousel-item {
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active.carousel-item-left, .carousel-fade .carousel-inner .active.carousel-item-right, .carousel-fade .carousel-inner .carousel-item {
+.carousel-fade .carousel-inner .active.carousel-item-left, .carousel-fade .carousel-inner .active.carousel-item-right,
+.carousel-fade .carousel-inner .carousel-item .bg-footer .faq .row .cards-home {
     opacity: 0;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    border: none !important;
-    overflow: visible;
-}
-
-.carousel-fade .carousel-inner .active, .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left, .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
-    opacity: 1;
-    border: 0;
     padding-right: 0px !important;
     padding-left: 0px !important;
     margin-right: 0px !important;
@@ -124,21 +93,6 @@ li {
 
 .cards-home {
     max-height: 250px;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    border: none !important;
-}
-
-.carousel-container {
-    margin-top: -16px;
-    min-width: 100% !important;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    border: none !important;
 }
 
 .bg-big-numbers {
@@ -152,10 +106,12 @@ li {
 .aux-red {
     background-color: red;
 }
+
 .aux-blue {
     background-color: blue;
     object-fit: fill;
 }
+
 .aux-yellow {
     background-color: yellow;
 
@@ -163,9 +119,6 @@ li {
 
 .aux-green {
     background-color: green;
-    margin: 0px !important;
-    padding: 0px !important;
-    border: 0;
 }
 
 .aux-purple {
@@ -180,25 +133,8 @@ li {
     background-color: black;
 }
 
-.navbarteste {
-    background-color: blue;
-    margin-bottom: -16px;
-}
-
-.carousel-inner {
-    width: fit-content;
-}
-
 .footer-bar {
     background-color: #547991 !important;
     color: black !important;
 
-}
-
-.carousel-item {
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
 }
