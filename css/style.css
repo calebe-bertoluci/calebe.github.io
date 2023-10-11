@@ -1,9 +1,15 @@
-/* Option 2: Import via CSS */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background: hsl(0 0 94%);
 }
 
 .row {
@@ -76,6 +82,7 @@ li {
 }
 
 .cards-home {
+    width: 425px;
     max-height: 250px;
 }
 
