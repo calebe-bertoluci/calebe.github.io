@@ -84,6 +84,7 @@ li {
 .cards-home {
     /*width: 410px;*/
     max-height: 250px;
+    min-height: 250px;
 }
 
 .bg-big-numbers {
