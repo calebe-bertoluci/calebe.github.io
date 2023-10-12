@@ -1,10 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- *** BOOTSTRAP *** -->
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
+
 <body>
 
+<!-- *** BARRA DE NAVEGAÇÃO *** -->
+<nav class="navbar navbar-expand-xl bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="imgs/logo.png" alt="Logo" width="43" height="43" class="d-inline-block align-text-center">
+            IBJM Livraria</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Novidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Política da Igreja</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categorias
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Novidades</a></li>
+                        <li><a class="dropdown-item" href="#">Recomendaçao Pastoral</a></li>
+                        <li><a class="dropdown-item" href="#">Teologia</a></li>
+                        <li><a class="dropdown-item" href="#">Aconselhamento</a></li>
+                        <li><a class="dropdown-item" href="#">Infantil</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Administração</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fale Conosco</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Procurar Título..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </div>
+</nav>
 </body>
 </html>
