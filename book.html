@@ -1,63 +1,618 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Book</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- *** BOOTSTRAP *** -->
-    <script defer src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css"/>
+	<title>Book</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	
+	<!-- *** BOOTSTRAP *** -->
+	<script defer src="js/bootstrap.bundle.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet"/>
 </head>
 
 <body>
 
 <!-- *** BARRA DE NAVEGAÇÃO *** -->
 <nav class="navbar navbar-expand-xl bg-body-tertiary sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="imgs/logo.png" alt="Logo" width="43" height="43" class="d-inline-block align-text-center">
-            IBJM Livraria</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Novidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Política da Igreja</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Categorias
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Novidades</a></li>
-                        <li><a class="dropdown-item" href="#">Recomendaçao Pastoral</a></li>
-                        <li><a class="dropdown-item" href="#">Teologia</a></li>
-                        <li><a class="dropdown-item" href="#">Aconselhamento</a></li>
-                        <li><a class="dropdown-item" href="#">Infantil</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Administração</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Fale Conosco</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Procurar Título..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-            </form>
-        </div>
-    </div>
+	<div class="container-fluid">
+		<a class="navbar-brand" href="index.html">
+			<img alt="Logo" class="d-inline-block align-text-center" height="43" src="imgs/logo.png" width="43">
+			IBJM Livraria</a>
+		<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+		        class="navbar-toggler"
+		        data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a aria-current="page" class="nav-link active" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Novidades</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Política da Igreja</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+					   role="button">
+						Categorias
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Novidades</a></li>
+						<li><a class="dropdown-item" href="#">Recomendaçao Pastoral</a></li>
+						<li><a class="dropdown-item" href="#">Teologia</a></li>
+						<li><a class="dropdown-item" href="#">Aconselhamento</a></li>
+						<li><a class="dropdown-item" href="#">Infantil</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a aria-disabled="true" class="nav-link disabled">Administração</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Fale Conosco</a>
+				</li>
+			</ul>
+			<form class="d-flex" role="search">
+				<input aria-label="Search" class="form-control me-2" placeholder="Procurar Título..." type="search">
+				<button class="btn btn-outline-success" type="submit">Pesquisar</button>
+			</form>
+		</div>
+	</div>
 </nav>
+
+<main>
+	<div class="container book-page pt-3">
+		
+		<!-- *** BREADCRUMB *** -->
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="">
+						Catálogo
+					</a>
+				</li>
+				<li class="breadcrumb-item">
+					<a href="">
+						Teologia
+					</a>
+				</li>
+				<li class="breadcrumb-item active">
+					Em Busca de Deus
+				</li>
+			</ol>
+		</nav>
+		
+		<div class="row-sidebar-wrapper">
+			<div class="row">
+				
+				<!-- *** BOOK BACKGROUND AND ITS IMAGE *** -->
+				<div class="col-md-5 col-lg-4 mb-4 mb-xl-0 book-background rounded">
+					<div class="book-cover mx-auto my-auto text-center">
+						<img class="img-fluid rounded pt-4 pb-4" height="350px" src="imgs/books/1.jpg" width="250px">
+					</div>
+				</div>
+				
+				<!-- *** BOOK DESCRIPTION *** -->
+				<div class="col-md-7 col-xl-4 float-md-right">
+					<h1 class="text-xs-center text-md-left font-dosis mb-2">Em Busca de Deus: A plenitude da Alegria
+						Cristã</h1>
+					<div class="mb-1">
+						<a class=" clear-hover"
+						   data-target="#productReviewModal"
+						   data-toggle="modal"
+						   href="https://booksrun.com/9780999685907-the-self-taught-programmer-the-definitive-guide-to-programming-professionally#0">
+							<span class="text-warning">
+                      <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fal fa-star"></i>
+                    <span class="text-black-400">4.0</span>
+                    </span>
+						</a><a
+							data-target="#productReviewModal"
+							data-toggle="modal"
+							href="https://booksrun.com/9780999685907-the-self-taught-programmer-the-definitive-guide-to-programming-professionally#0">Rate
+						this book</a>
+					</div>
+					<div class="d-none d-md-block">
+						<div class="mt-1">
+							<div>
+								<span class="text-black-400">ISBN-13:</span>
+								<span>9780999685907</span>
+							</div>
+							<div>
+								<span class="text-black-400">ISBN-10:</span>
+								<span>0999685902</span>
+							</div>
+							<span class="text-black-400">Author:</span>
+							<span>
+                                          <a href="https://booksrun.com/author/cory" title="Sell book by Cory">Cory</a>,                              <a
+									href="https://booksrun.com/author/althoff" title="Sell book by Althoff">Althoff</a>                                    </span>
+							<div>
+								<span class="text-black-400">Data de Publicação:</span>
+								<span>2017</span>
+							</div>
+							<div>
+								<span class="text-black-400">Publisher:</span>
+								<span>Self-Taught Media</span>
+							</div>
+							<span class="text-black-400">Format:</span>
+							<span>
+            Paperback
+              299 pages
+                </span>
+							<div>
+								<span class="text-black-400">Category:</span>
+								<span>
+                  <a href="https://booksrun.com/college-textbooks/computer-science"
+                     title="Sell Computer Science textbook">
+            Computer Science
+          </a>
+          ,                  <a href="https://booksrun.com/college-textbooks/programming-introductory-and-beginning"
+                                title="Sell Introductory &amp; Beginning textbook">
+            Introductory &amp; Beginning
+          </a>
+          ,                  <a href="https://booksrun.com/college-textbooks/programming"
+                                title="Sell Programming textbook">
+            Programming
+          </a>
+          ,                  <a href="https://booksrun.com/college-textbooks/programming-microsoft-programming"
+                                title="Sell Microsoft Programming textbook">
+            Microsoft Programming
+          </a>
+                        </span>
+							</div>
+						</div>
+					</div>
+					<div class="divider text-xs-center mb-1 text-success mt-2 small">
+						<i class="fal fa-shipping-fast fa-lg"></i>
+						<span><strong>FREE</strong> US shipping
+                          </span>
+					</div>
+				</div>
+				
+				
+				<div class="col-xl-4 col-12 col-xl-sidebar pl-xl-2 h-100 book-buttons-block">
+					<div class="sticky-column-nav">
+						
+						
+						<div class="card card-collapse success mb-2">
+							<a class="card-header bg-blue-light d-flex align-items-baseline"
+							   href="https://booksrun.com/user/sell/cart/add/0999685902" rel="nofollow" target="_blank"
+							   title="Sell back 9780999685907 / 0999685902 for $4.68">
+								<div class="flex-full-sizable text-left text-black-800">
+									<b>Sell</b>
+								</div>
+								<div class="text-success pr-2">
+									<b>Get cash immediately!</b>
+								</div>
+								<i class="far fa-chevron-right text-primary"></i>
+							</a>
+						</div>
+						
+						
+						<div class="accordion" id="book_card_accordion">
+							<div class="card card-collapse primary">
+								<div aria-controls="rent_collapse_1" class="card-header d-flex align-items-baseline"
+								     data-target="#rent_collapse_1" data-toggle="collapse"
+								     id="rent_heading_id">
+									<div class="flex-full-sizable pr-2">
+										<div class="flex-full-sizable text-black-800">
+											<b>Rent</b>
+										</div>
+										<div class="d-flex">
+											<div class="pr-1">
+												<i aria-expanded="false"
+												   aria-haspopup="false"
+												   class="fa-fw fa-info-circle fas text-primary pl-2 pr-2"
+												   data-toggle="dropdown"
+												   id="book_rent_term" role="button"></i>
+												<div aria-labelledby="book_rent_term"
+												     class="book-rent-info-dropdown dropdown-menu" id="book_rent_term">
+                  <span class="dropdown-item-text d-flex flex-column">
+                    <span class="book-rent-dropdown-term d-xl-none js-book-rent-current-term">35 days</span>
+                    <span class="js-book-rent-date-till text-xl-center">Due Nov 17, 2023</span>
+                  </span>
+												</div>
+												<span class="d-none d-xl-inline js-book-rent-current-term">35 days</span>
+											</div>
+											<div class="text-black-800">
+												from <b class="font-weight-600 js-book-rent-current-price">$15.53</b>
+												<span class="text-muted smaller">USD</span>
+											</div>
+										</div>
+									</div>
+									<i class="far fa-chevron-right rotate-icon text-primary"></i>
+								</div>
+								
+								<div aria-labelledby="rent_heading_id" class="collapse "
+								     data-parent="#book_card_accordion"
+								     id="rent_collapse_1">
+									<div class="card-body py-2">
+										<div class="custom-control custom-radio custom-control-input-center py-1 d-flex">
+											<input checked="" class="custom-control-input" data-price="15.53"
+											       data-replacer=":35" id="rent_option_0" name="rentName" type="radio"
+											       value="0">
+											<label class="custom-control-label text-break cursor-pointer text-black-800 flex-full-sizable"
+											       for="rent_option_0">
+                  <span class="flex-full-sizable flex-wrap flex-column">
+                    <span class="p-0">35 days</span>
+                                      </span>
+												<span class="flex-full-static justify-content-end">
+                      <span class="book-rent-due d-flex align-items-end">Due Nov 17, 2023</span>
+                      <span class="font-weight-600">$15.53</span>
+                    </span>
+											</label>
+										</div>
+										<div class="custom-control custom-radio custom-control-input-center py-1 d-flex">
+											<input class="custom-control-input" data-price="18.48" data-replacer=":60"
+											       id="rent_option_1" name="rentName" type="radio" value="1">
+											<label class="custom-control-label text-break cursor-pointer text-black-800 flex-full-sizable"
+											       for="rent_option_1">
+                  <span class="flex-full-sizable flex-wrap flex-column">
+                    <span class="p-0">60 days</span>
+                                      </span>
+												<span class="flex-full-static justify-content-end">
+                      <span class="book-rent-due d-flex align-items-end">Due Dec 12, 2023</span>
+                      <span class="font-weight-600">$18.48</span>
+                    </span>
+											</label>
+										</div>
+										<div class="custom-control custom-radio custom-control-input-center py-1 d-flex">
+											<input class="custom-control-input" data-price="20.19" data-replacer=":63"
+											       id="rent_option_2" name="rentName" type="radio" value="2">
+											<label class="custom-control-label text-break cursor-pointer text-black-800 flex-full-sizable"
+											       for="rent_option_2">
+                  <span class="flex-full-sizable flex-wrap flex-column">
+                    <span class="p-0">63 days</span>
+                                      </span>
+												<span class="flex-full-static justify-content-end">
+                      <span class="book-rent-due d-flex align-items-end">Due Dec 15, 2023</span>
+                      <span class="font-weight-600">$20.19</span>
+                    </span>
+											</label>
+										</div>
+										
+										<div class="pt-2 pb-1">
+											<a class="btn btn-success w-100"
+											   data-name="rentName"
+											   href="https://booksrun.com/user/buy/cart/add/9780999685907:dropship:rent:item"
+											   onclick="addOptionToCart(event, this)" rel="nofollow"
+											   title="Rent 9780999685907 / 0999685902 now from $15.53">
+												Add to cart
+											</a>
+										</div>
+										<div class="divider text-center mb-1 text-success mt-2 small">
+											<i class="fal fa-shipping-fast fa-lg"></i>
+											<span><strong>FREE</strong> shipping on <strong>RENTAL RETURNS</strong></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="card card-collapse primary">
+								<a class="card-header bg-blue-light d-flex align-items-baseline"
+								   href="https://booksrun.com/user/buy/cart/add/0999685902-8-1:buy" rel="nofollow"
+								   target="_blank" title="Buy 9780999685907 / 0999685902 now for $13.39">
+									<div class="flex-full-sizable text-left text-black-800">
+										<b>Buy Used</b>
+									</div>
+									<div class="text-black-800 pr-2">
+										from <b class="font-weight-600">$13.39</b>
+										<span class="text-muted smaller">USD</span>
+									</div>
+									<i class="far fa-chevron-right text-primary"></i>
+								</a>
+							</div>
+							
+							
+							<div class="card card-collapse primary">
+								<a class="card-header bg-blue-light d-flex align-items-baseline"
+								   href="https://booksrun.com/user/buy/cart/add/9780999685907:dropship:buy"
+								   rel="nofollow" target="_blank" title="Buy 9780999685907 / 0999685902 now for $21.71">
+									<div class="flex-full-sizable text-left text-black-800">
+										<b>Buy New</b>
+									</div>
+									<div class="text-black-800 pr-2">
+										from <b class="font-weight-600">$21.71</b>
+										<span class="text-muted smaller">USD</span>
+									</div>
+									<i class="far fa-chevron-right text-primary"></i>
+								</a>
+							</div>
+						
+						
+						</div>
+					
+					
+					</div>
+				</div>
+				<div class="bg-white fixed-bottom w-100 d-md-none sticky-buttons" style="height: 0px;">
+					<div class="container text-center mt-1">
+						<div class="sticky-buttons-grid">
+							<div>
+								<a class="h5 font-weight-bold text-decoration-none text-uppercase text-success js-send-test-event"
+								   data-type="sell" href="https://booksrun.com/user/sell/cart/add/0999685902"
+								   title="Sell back 9780999685907 / 0999685902 for $4.68">Sell</a>
+							</div>
+							<div>
+								<a class="h5 font-weight-bold text-decoration-none text-uppercase text-primary js-send-test-event js-scroll-to-book-card"
+								   data-type="buy"
+								   href="https://booksrun.com/9780999685907-the-self-taught-programmer-the-definitive-guide-to-programming-professionally#book_card_accordion"
+								   title="Buy 9780999685907 / 0999685902 now for $13.39">Buy</a>
+								<p class="small">From $13.39</p>
+							</div>
+							<div>
+								<a class="h5 font-weight-bold text-decoration-none text-uppercase text-primary-dark js-send-test-event js-scroll-to-book-card"
+								   data-type="rent"
+								   href="https://booksrun.com/9780999685907-the-self-taught-programmer-the-definitive-guide-to-programming-professionally#book_card_accordion"
+								   title="">Rent</a>
+								<p class="small">From $15.53</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-12 d-block d-md-none">
+					<p class="font-weight-bold h5 my-2">Detalhes do Livro</p>
+					<div class="mt-1">
+						<span class="text-black-400">Autor:</span>
+						<span>
+                                          <a href="https://booksrun.com/author/cory" title="Sell book by Cory">Cory</a>,                              <a
+								href="https://booksrun.com/author/althoff" title="Sell book by Althoff">Althoff</a>                                    </span>
+						<div>
+							<span class="text-black-400">Data de Publicação:</span>
+							<span>2017</span>
+						</div>
+						<div>
+							<span class="text-black-400">Publisher:</span>
+							<span>Self-Taught Media</span>
+						</div>
+						<span class="text-black-400">Format:</span>
+						<span>Paperback: 299 pages
+                </span>
+						<div>
+							<span class="text-black-400">Category:</span>
+							<span>
+                  <a href="https://booksrun.com/college-textbooks/computer-science"
+                     title="Sell Computer Science textbook">
+            Computer Science
+          </a>
+          ,                  <a href="https://booksrun.com/college-textbooks/programming-introductory-and-beginning"
+                                title="Sell Introductory &amp; Beginning textbook">
+            Introductory &amp; Beginning
+          </a>
+          ,                  <a href="https://booksrun.com/college-textbooks/programming"
+                                title="Sell Programming textbook">
+            Programming
+          </a>
+          ,                  <a href="https://booksrun.com/college-textbooks/programming-microsoft-programming"
+                                title="Sell Microsoft Programming textbook">
+            Microsoft Programming
+          </a>
+                        </span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-12 col-xl-8">
+					<h2 class="mt-4 mb-2 h5 font-weight-bold">Summary</h2>
+					<div class="book-info-wrapper" id="bookSummaryBlock">
+						Acknowledged authors
+						<a href="https://booksrun.com/author/cory" title="Sell, Buy or Rent book by Cory">
+							Cory
+						</a>,
+						<a href="https://booksrun.com/author/althoff" title="Sell, Buy or Rent book by Althoff">
+							Althoff
+						</a>
+						wrote The Self-Taught Programmer: The Definitive Guide to Programming Professionally
+						comprising 299 pages back in 2017.
+						Textbook and eTextbook are published under ISBN 0999685902 and 9780999685907.
+						Since then The Self-Taught Programmer: The Definitive Guide to Programming Professionally
+						textbook
+						received total rating of 4.0 stars and
+						was available to sell back to BooksRun online for the top buyback price
+						of $ 4.68 or rent at the marketplace.
+					
+					</div>
+					<h2 class="mb-2 mt-4 h5 font-weight-bold">Description</h2>
+					<div class="book-info-wrapper js-collapse text-collapse-wrapper" data-width="1386"
+					     id="bookDescriptionBlock">
+						<p>I am a self-taught programmer. After a year of self-study, I learned to program well enough
+							to land a job as a software engineer II at eBay. Once I got there, I realized I was severely
+							under-prepared. I was overwhelmed by the amount of things I needed to know but hadn't
+							learned yet. My journey learning to program, and my experience at my first job as a software
+							engineer were the inspiration for this book. This book is not just about learning to
+							program; although you will learn to code. If you want to program professionally, it is not
+							enough to learn to code; that is why, in addition to helping you learn to program, I also
+							cover the rest of the things you need to know to program professionally that classes and
+							books don't teach you. "The Self-taught Programmer" is a roadmap, a guide to take you from
+							writing your first Python program, to passing your first technical interview. I divided the
+							book into six sections: 1. Learn to program in Python 3 and build your first program. 2.
+							Learn Object-oriented programming and create a powerful Python program to get you hooked. 3.
+							Learn to use tools like Git, Bash, regular expressions and databases. Then use your new
+							coding skills to build a web scraper. 4. Study Computer Science fundamentals including
+							computer architecture, data structures, algorithms and network programming. 5. Learn to
+							program for production: I cover the software development process, testing, and best coding
+							practices.6. Finish with tips for working with a team and landing a programming job.You CAN
+							learn to program professionally. The path is there. Will you take it?</p>
+						<div class="w-100 mt-1 text-center d-none show-info-button">
+							<a data-labelledby="bookDescriptionBlock"
+							   href="https://booksrun.com/9780999685907-the-self-taught-programmer-the-definitive-guide-to-programming-professionally#">Show
+								more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="mt-4 bg-light">
+		<div class="container " id="customerReviewsBlock">
+			<div class="row">
+				<div class=" col-12">
+					<div class="card shadow-none container-fluid overflow-hidden bg-light">
+						<div class="row">
+							<div class="col-12 col-md-5 justify-content-xl-end justify-content-center d-flex order-2 order-md-1">
+								<div class="d-flex w-100 mb-md-n2">
+									<img alt="Rate this book"
+									     class="d-none d-xl-block mx-auto"
+									     src="../../../exemplo_files/rate-banner-no-review-desktop.svg">
+									<img alt="Rate this book"
+									     class="d-block mx-auto w-80 w-sm-50 w-md-100 w-lg-70 d-xl-none"
+									     src="../../../exemplo_files/rate-banner-no-review-mobile.svg">
+								</div>
+								<div id="review-list-container"></div>
+							</div>
+							<div class="col-12 col-md-7 col-xl-6  py-2 order-1 order-md-2 py-xl-5 pr-xl-9 pl-md-1 justify-content-center">
+								<p class="mb-2 mb-xl-3 text-center text-md-left h2 font-dosis">
+									We would LOVE it if you could help us and other readers by reviewing the book
+								</p>
+								<button class="btn btn-primary w-100" data-target="#productReviewModal"
+								        data-toggle="modal"
+								        type="button">
+									Rate this book
+								</button>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<div aria-hidden="true" aria-labelledby="productReviewModalTitle" class="modal fade" id="productReviewModal"
+		     role="dialog" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title font-dosis" id="productReviewModalTitle">Book review</h2>
+						<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+							<i class="far fa-times fa-fw text-primary h2 mb-0"></i>
+						</button>
+					</div>
+					<div class="carousel slide" data-interval="false" data-pause="false" data-ride="carousel"
+					     data-touch="false" data-wrap="false" id="carouselFormSteps">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<form action="https://booksrun.com/textbook/review" class="js-product-review-form"
+								      method="post"
+								      name="productReview">
+									<div class="d-flex flex-column" style="min-height: 360px">
+										<div class="modal-body">
+											<div class="row justify-content-end">
+												<div class="col form-flashbag"></div>
+											</div>
+											<div class="form-group row align-items-center">
+												<div class="col-12"><label class="required" for="productReview_rating">Your
+													rate</label></div>
+												<div class="col-12">
+            <span class="product-review-rating">
+                                                  <span class="product-review-rating">
+              <i class="review-star  change-review-rating" data-value="5" title="5"></i>
+              <i class="review-star  change-review-rating" data-value="4" title="4"></i>
+              <i class="review-star  change-review-rating" data-value="3" title="3"></i>
+              <i class="review-star  change-review-rating" data-value="2" title="2"></i>
+              <i class="review-star  change-review-rating" data-value="1" title="1"></i>
+          </span>
+ 
+                          </span>
+													<input class="review-rating-input" name="productReview[rating]"
+													       type="hidden" value="0">
+												</div>
+											</div>
+											<div class="form-group row">
+												<div class="col-12 pb-1">
+													<label>
+														How useful is the contents of the book? Was this book worth the
+														time you spent reading it?
+														<i class="far fa-question-circle fa-fw text-primary"
+														   data-content="Example: This book reads easily because it has a clear structure of chapters, sections, exercises, etc. The majority of self-test activities are interesting and helpful for a better understanding of the material."
+														   data-toggle="popover"></i>
+													</label>
+												</div>
+												<div class="col-12">
+                                                    <textarea class="form-control pointer-event-auto"
+                                                              maxlength="512" name="productReview[body][0]"
+                                                              placeholder="The general impression of the book"
+                                                              required=""
+                                                              rows="4"></textarea>
+												</div>
+											</div>
+											<input name="productReview[_token]" type="hidden"
+											       value="cclFxO2H2v3xwf88eCdbbVDGRmjl5sCKXxiC9pJRIK4">
+											<input name="productReview[isbn13]" type="hidden" value="9780999685907">
+											<input name="_part" type="hidden" value="0">
+										</div>
+										<div class="modal-footer justify-content-between">
+											<div></div>
+											<button class="btn btn-primary confirm-review float-right"
+											        title="Send review"
+											        type="submit">Submit
+											</button>
+										</div>
+									</div>
+								</form>
+							
+							</div>
+							<div class="carousel-item js-review-final">
+								<div class="d-flex flex-column" style="min-height:360px;">
+									<div class="modal-body text-center px-md-10">
+										<img alt="Success" class="d-block mx-auto"
+										     src="../../../exemplo_files/bulk_success.svg">
+										<h3 class="font-dosis mt-2 px-md-4">Congratulations! We have received your book
+											review.</h3>
+									</div>
+									<div class="modal-footer justify-content-between">
+										<button class="btn btn-primary" data-dismiss="modal" title="Finish review"
+										        type="button">
+											Close
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+</main class="b-content">
+
+
+<!-- *** RODAPÉ *** -->
+<div class="container-fluid pt-5 footer"></div>
+<footer class="row footer">
+	<div class="col-sm-4 mx-auto footer text-center">
+		<h6 class="ms-3 pb-4 fw-bolder">HORÁRIOS</h6>
+		<p class="ms-3">Culto: Domingo, 10h30</p>
+		<p class="ms-3">Escola Bíblica: Domingo, 9h</p>
+		<p class="ms-3">Reunião de Oração: Quinta, 19h30</p>
+		<p class="ms-3 pb-5">R. Astério Pinto, 71 - Jd. Minesota, Sumaré/SP</p>
+	</div>
+	<div class="col-sm-4 col-md-4 mx-auto footer text-center">
+		<img height="75px" src="imgs/logo.png" width="75px">
+		<p class="pt-4">Igreja Batista Jardim Minesota</p>
+		<p class="pb-5">Proclamamos a majestade de Cristo para que as pessoas sejam transformadas e Deus seja
+			glorificado</p>
+	</div>
+	<div class="col-sm-4 mx-auto footer text-center">
+		<h6 class="ms-3 pb-4">REDES SOCIAIS</h6>
+		<p class="ms-3">Facebook</p>
+		<p class="ms-3">Instagram</p>
+		<p class="ms-3">Spotify</p>
+		<p class="ms-3 pb-5">Site Oficial</p>
+	</div>
+</footer>
+<div class="text-center p-2 footer-bar">
+	© 2023 Igreja Batista Jardim Minesota
+</div>
+
 </body>
 </html>
